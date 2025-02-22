@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BS SETUP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- JS SETUP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>Exercise#5: Javascript Events</title>
+</head>
+ <body>
+ 	<div class="container mt-5">
+ 		<h1>GREET APP WITH INPUT</h1>
+
+ 	<!-- ONTOGGLE EVENTS -->
+	 	<details>
+	 		<summary>
+	 			INSTRUCTIONS
+	 		</summary>
+	 		<p>
+	 			Enter your first name.
+	 		</p>
+	 	</details>
+
+	  	<!-- GREETING APP-->
+		<label for="fname">Enter name: </label>
+	 	<br>
+	 	<input type="text" class="form-control" id="fname">
+		<h5 id="guestName"></h5>
+
+	 <!--BUTTONS-->
+	 	<button type="button" class="btn btn-info" onclick="greet()">✋  Greet</button>
+	 	<button type="button" class="btn btn-primary" onclick="window.location.reload()" onmouseover="changeTextColor()" onmouseout="resetTextColor()";><span style='font-size:15px;'>&#8634;</span>  Refresh</button>
+
+	 <!-- SCRIPT -->
+	 	<script type="text/javascript">
+	 	// instructions
+	 		document.getElementById("fname").onchange=function() {myName()};
+
+	 		function myName() {
+	 			var name=document.getElementById("fname");
+	 			name.value=name.value.toUpperCase();
+	 	</script>
+
+	 	<script type="text/javascript">
+	 	//onchange
+	 		function upperCase() {
+				const name = document.getElementById("fname");
+				name.value = name.value.toUpperCase();
+			}
+		</script>
+
+		<script type="text/javascript">
+	 	//onmouseover & out sample code
+	 		const reload = document.getElementById('refresh');
+
+	 		// onmouseover
+	 		function changeTextColor() {
+	 			reload.style.color="red";
+	 			reload.style.background="white";
+	 		}
+
+	 		// onmouseout
+	 		function resetTextColor() {
+	 			reload.style.color = "white";
+	 			reload.style.background = "337ab7";
+	 		}
+	 	</script>
+
+	 	<script type="text/javascript">
+	 	// greeting app
+ 			function greet(){
+ 				var name = document.getElementById ('fname').value;
+
+ 			document.getElementById('guestName').innerHTML = 'Thank you for entering your name, ' + name + '.';
+	 		}
+	 	</script>
+
+	 	<script type="text/javascript">
+	 	//refresh
+	 		function 
+	 	</script>
+ 	</div>
+
+	<div class="footer mt-5 text-center"><h2> AY 24-25 | ICT 9-R | <a href="https://aledesma-9r.github.io/Q2EX2/">&#169; Aisha Ashley O. Ledesma</a></h2></div>
+ </body>
+</html>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,500;1,500&family=Short+Stack&display=swap');
+
+
+body {
+  font-family: 'Short stack';
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADDPuN6EMXGb7dMXPf5RkD5H-Yb_pdVmJLg&s);
+}
+
+input,  a{
+  font-family: 'Bonbon';
+}
+
+.container {
+  width: 55%;
+  background-color: skyblue;
+  padding: 150px;
+}
